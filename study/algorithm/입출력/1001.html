@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script>
+    <!-- 자바스크립트로 값을 입력받기 위해서는 모듈선언이 필요.    -->
+    const fs = require('fs');
+    //readfilesync를 통해 입력받은 값을 가져오는데, 공백을 통해 분리를 진행한다.
+    //공백을 통해 배열로 분리된다.
+    //배열.map(number) 또는 배열.map(value=>+value)를 통해 숫자로 변환할수있다.
+    const inputData = fs.readFileSync('/dev/stdin').toString().split(' ').map(value=>+value);
+    const [a,b] = inputData;
+    console.log(a-b);
+    //10998
+    const fs = require('fs');
+    //readfilesync를 통해 입력받은 값을 가져오는데, 공백을 통해 분리를 진행한다.
+    //공백을 통해 배열로 분리된다.
+    //배열.map(number) 또는 배열.map(value=>+value)를 통해 숫자로 변환할수있다.
+    const fs = require('fs');
+    const input = fs.readFileSync('/dev/stdin').toString().split(' ');
+    const a = parseInt(input[0]);
+    const b = parseInt(input[1]);
+    console.log(a*b);
+    //1008
+    const fs = require('fs');
+    const input = fs.readFileSync('/dev/stdin').toString().split(' ');
+    const a = parseInt(input[0]);
+    const b = parseInt(input[1]);
+    console.log(a/b);
+    //10869
+    const fs = require('fs');
+    const input = fs.readFileSync('/dev/stdin').toString().split(' ');
+    const a = parseInt(input[0]);
+    const b = parseInt(input[1]);
+    console.log(a+b);
+    console.log(a-b);
+    console.log(a*b);
+    console.log(Math.floor(a/b));
+    console.log(a%b);
+</script>
+<body>
+
+</body>
+</html>
