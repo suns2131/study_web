@@ -29,7 +29,7 @@ const [n,...arr]=input; //구조분해 할당을 사용하였음.
 //4. 첫 번째 줄에 자연수 n을 입력받고, 그 다음줄에 공백으로 구분된 n개의 값들을 입력받을 때
 const input=fs.readFileSync('/dev/stdin').toString().trim().split('\n');
 //5. 첫 번째 줄에 자연수 n을 입력받고, 그 다음줄부터 n개의 줄에 걸쳐 한 줄에 하나의 값을 입력받을 때
-```
+``` 
    * tostring()을 사용하는 이유 
      * fs.readFileSync는 반환값이 Buffer이기 때문에 예상하지 못한 오류가 발생할 수 있어 
        문자열로 형변환을 진행하는 것이 안전함.
