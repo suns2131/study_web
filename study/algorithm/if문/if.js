@@ -1,0 +1,1 @@
+console.log('if문 알고리즘')
