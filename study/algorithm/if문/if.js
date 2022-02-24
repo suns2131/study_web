@@ -97,7 +97,7 @@ if(total > 60)
     }
     console.log(Hour + ' ' + Minute)
 }
-//////
+//////2525 풀이 > 못풀었음 제대로
 const fs = require('fs');
 const input = fs.readFileSync("/dev/stdin").toString().trim().split('\n');
 const current = input[0].split(' ').map(Number);
@@ -108,4 +108,26 @@ const cookEndTimeHour = parseInt((currentHour*60 + currentMinute + cookTime)/ 60
 const cookEndTimeMinute = parseInt((currentHour*60 + currentMinute + cookTime)% 60);
 console.log(cookEndTimeHour >= 24 ? cookEndTimeHour - 24 : cookEndTimeHour, cookEndTimeMinute);
 
+//2480
+const fs = require('fs');
+const input = fs.readFileSync("/dev/stdin").toString().split(' ');
+let A,B,C;
+[A,B,C] = [Number(input[0]),Number(input[1]),Number(input[2])];
+if(A==B && A==C && B==C)
+{
+  console.log(10000+A*1000);
+}
+else if(A==B || A==C || B==C)
+{
+    if(A==B)
+        console.log(1000+A*100);
+    else if(A==C)
+        console.log(1000+A*100);
+    else if(B==C)
+        console.log(1000+B*100);
+}
+else if(A!=B && A!=C && B!=C)
+{
+    console.log(Math.max(A,B,C)*100);
+}
 
