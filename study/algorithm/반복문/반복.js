@@ -62,7 +62,7 @@ console.log(total);
 const input = require('fs').readFileSync("/dev/stdin").toString().split('\n');
 const loop_cnt = Number(input[0]);
 let loops,a,b,ts;
-let total = '';
+let total = ''
 for(let i = 1; i <= loop_cnt ; i++) {
     loops = input[i].split(' ');
     a = Number(loops[0]);
